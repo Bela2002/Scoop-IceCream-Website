@@ -20,8 +20,8 @@ body {
 }
 
 .circle-img {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     border-radius: 50%;
     object-fit: cover; 
     margin: 0 auto;
