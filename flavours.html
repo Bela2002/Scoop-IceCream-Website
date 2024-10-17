@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Flavours</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="flavours.css">
+
+    <style>
+        /* Hide the default checkbox */
+        input[type="checkbox"] {
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            width: 25px;
+            height: 25px;
+            background-color: #f0f0f0;
+            border: 2px solid #dcdbdb;
+            border-radius: 50%; /* Makes the checkbox circular */
+            cursor: pointer;
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Checkbox when checked */
+        input[type="checkbox"]:checked {
+            background-color:pink;
+        }
+
+        /* Custom checkmark when checked */
+        input[type="checkbox"]:checked::after {
+            content: '';
+            position: absolute;
+            top: 5px;
+            left: 9px;
+            width: 6px;
+            height: 12px;
+            border: solid white;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+
+        /* Add some padding and margin for label */
+        label {
+            margin-left: 10px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container text-center mt-5">
+        <h1 class="flavour-title">Flavours</h1>
+
+        <form action="cart.php" method="post">
+        <div class="row mt-4">
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/c.jpg" alt="Chocolate" class="circle-img">
+                    <p class="p-p">Chocolate</p>
+                    <p class="p-p">Rs 200/scoop</p>
+                    <input type="checkbox" id="Chocolate" name="flavour[]" value="Chocolate">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/v.jpeg" alt="Vanila" class="circle-img">
+                    <p class="p-p">Vanila</p>
+                    <p class="p-p">Rs 200/scoop</p>
+                    <input type="checkbox" id="Vanila" name="flavour[]" value="Vanila">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/s.jpeg" alt="Strawberry" class="circle-img">
+                    <p class="p-p">Strawberry</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox" id="Strawberry" name="flavour[]" value="Strawberry">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/mc.jpg" alt="Mint Chocolate Chip" class="circle-img">
+                    <p class="p-p">Mint Chocolate Chip</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox"  id="Mint Chocolate Chip" name="flavour[]" value="Mint Chocolate Chip">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/cc.jpg" alt="Cookies n' Cream" class="circle-img">
+                    <p class="p-p">Cookies n' Cream</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox"  id="Cookies n' Cream" name="flavour[]" value="Cookies n' Cream">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/bs.jpg" alt="Butterscotch" class="circle-img">
+                    <p class="p-p">Butterscotch</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox"  id="Butterscotch" name="flavour[]" value="Butterscotch">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/sc.jpeg" alt="Strawberry Cheesecake" class="circle-img">
+                    <p class="p-p">Strawberry Cheesecake</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox"  id="Strawberry Cheesecake" name="flavour[]" value="Strawberry Cheesecake">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+            <div class="col-4 col-md-3 mb-4">
+                    <img src="./images/flavours/rr.jpg" alt="Rum Raisin" class="circle-img">
+                    <p class="p-p">Rum Raisin</p>
+                    <p class="p-p">Rs 250/scoop</p>
+                    <input type="checkbox"  id="Rum Raisin" name="flavour[]" value="Rum Raisin">
+                    <label style="font-family: cursive; font-size: 20px; color: #fff;">Add</label>
+            </div>
+        </div>
+    </form>
+        <div class="d-flex justify-content-between mt-4">
+            <a href="home.html"><button class="btn btn-outline-secondary">← Back</button></a>  
+
+            <a href="toppings.html"><button class="btn btn-outline-secondary">+Add Toppings</button></a>
+        </div>
+    </div>
+</body>
+</html>

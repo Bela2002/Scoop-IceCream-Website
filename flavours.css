@@ -1,0 +1,71 @@
+body { 
+    background-image: url('images/background-2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.flavour-title {
+    font-weight: bolder;
+    font-family: cursive;
+}
+
+.circle-btn {
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.circle-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; 
+    margin: 0 auto;
+}
+
+button p {
+    margin: 0;
+    font-size: 18px;
+    font-family: cursive;
+    color: #fff; 
+}
+
+.p-p {
+    margin: 0;
+    font-size: 18px;
+    font-family: cursive;
+    color: #fff;    
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Adjust padding for button size */
+    font-size: 16px; /* Font size */
+    border: 2px solid transparent; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center;
+    text-decoration: none; /* No underline */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transitions */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.btn-outline-secondary {
+    color: #fff; /* Text color */
+    background-color: transparent; /* Background color */
+    border-color: #fff; /* Border color */
+}
+
+.btn-outline-secondary:hover {
+    color: white; /* Text color on hover */
+    background-color: rgb(233, 60, 89); /* Background color on hover */
+    border-color: rgb(163, 33, 55); /* Border color on hover */
+}
+
+.btn:focus {
+    outline: none; /* Remove outline on focus */
+    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5); /* Box shadow for focus */
+}
