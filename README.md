@@ -58,7 +58,9 @@ We leveraged **Ballerina’s powerful features** to build a system that is fast,
 
 ![Screenshot 2024-10-21 001201](https://github.com/user-attachments/assets/6c1c5bc6-acda-4352-87b6-2bc2b7665943)
 
-![Screenshot 2024-10-17 234847](https://github.com/user-attachments/assets/2ddfd313-62d5-4f6f-9e46-d3a26e1c94bb)
+![image](https://github.com/user-attachments/assets/f8d4ed29-a02a-4907-8cfb-4f4cde8771c1)
+
+![image](https://github.com/user-attachments/assets/b04834dd-7fb4-4d87-b883-3be7c035ffe3)
 
 ---
 
